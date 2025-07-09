@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zainervatech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="intro">
+    <div class="intro-content">
+      <img src="pict/logooo.jpg" alt="Logo Zainervatech" class="intro-logo" />
+      <div class="underline"></div>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <h1 class="logo">
+      <img src="pict/logo2.jpg" alt="Logo" class="logo-img" />
+      Zainervatech
+    </h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#beranda">Home</a></li>
+        <li><a href="#sejarah">Description</a></li>
+        <li><a href="#tim">Team</a></li>
+        <li><a href="#portofolio">Portofolio</a></li> <!-- ✅ Ditambahkan -->
+        <li><a href="#kontak">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda" class="section beranda">
+    <div class="content">
+      <h2>Welcome To Zainervatech</h2>
+      <p>Building Websites, App & Games |  Tech Service For Your Ideas | Creating & Brainstorming Innovations</p>
+    </div>
+  </section>
+
+  <section id="sejarah" class="section Deskripsi">
+    <div class="content">
+      <h2><center><u>Description</u></center></h2>
+      <p>Zainerva adalah startup teknologi yang digerakkan oleh 
+        semangat Generasi Zain—generasi kreatif, inovatif, dan adaptif terhadap perubahan zaman. 
+        Kami fokus pada pengembangan aplikasi, website, dan solusi digital 
+        berbasis teknologi modern.</p>
+        <br>
+        <p>Menggabungkan <b>Zain</b> (identitas dan semangat generasi baru) dengan <b>Minerva</b>
+        (dewi kebijaksanaan dan strategi),
+        Zainerva hadir sebagai simbol sinergi antara kreativitas dan kecerdasan teknologi.</p>
+    </div>
+  </section>
+
+  <section id="tim" class="section tim">
+    <div class="content">
+      <h2><center><u>Our Team</u></center></h2>
+
+      <h3>Designer</h3>
+      <div class="team-grid">
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/abi.jpg" alt="Habiburahman" />
+          <h4>Habiburahman</h4>
+          <p>UI/UX Designer</p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Pelajar</p>
+          </div>
+        </div>
+
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/danis.jpg" alt="Javier Danishwara" />
+          <h4>Javier Danishwara</h4>
+          <p>UI/UX Designer</p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Jawa Timur</p>
+            <p><strong>Status:</strong> Pelajar</p>
+          </div>
+        </div>
+
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/rey.jpg" alt="Rainhard" />
+          <h4>Rainhard</h4>
+          <p>UI/UX Designer</p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Mahasiswa</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Programmer</h3>
+      <div class="team-grid">
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/nabila.jpg" alt="Nabila Ramadhanty" />
+          <h4>Nabila Ramadhanty</h4>
+          <p>Software</p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Mahasiswi</p>
+          </div>
+        </div>
+
+
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/qila.jpg" alt="Tenriany Aqila" />
+          <h4>Tenriany Aqila</h4>
+          <p>Software</p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Mahasiswi</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Finance</h3>
+      <div class="team-grid">
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/nafiza.jpg" alt="Nafiza Irana" />
+          <h4>Nafiza Irana</h4>
+          <p>Pengumpulan Uang Bulanan & Buat RAB project </p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Pelajar </p>
+          </div>
+        </div>
+      </div>
+
+      <h3>CS / Admin</h3>
+      <div class="team-grid">
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/fadlan.jpg" alt="Ahmad Fadlan" />
+          <h4>Ahmad Fadlan</h4>
+          <p>Pemegang Sosial Media </p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Pelajar</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Quality Assurance</h3>
+      <div class="team-grid">
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/indra.jpg" alt="Indra" />
+          <h4>Indra</h4>
+          <p>Peneliti Project </p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Mahasiswa</p>
+          </div>
+        </div>
+
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/Ilham.jpg" alt="Ilham Putra" />
+          <h4>Ilham Putra</h4>
+          <p>Peneliti Project </p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Pelajar</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Sekretaris</h3>
+      <div class="team-grid">
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/Fadil.PNG" alt="Ahmad Fadil" />
+          <h4>Ahmad Fadil</h4>
+          <p> Pembuat Laporan Project </p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Pelajar</p>
+          </div>
+        </div>
+
+        <div class="team-member" onclick="toggleBio(this)">
+          <img src="pict/nugi.jpg" alt="Anugrah" />
+          <h4>Anugerah</h4>
+          <p> Pembuat Laporan Project </p>
+          <div class="bio-detail">
+            <p><strong>Asal:</strong> Sulawesi Selatan</p>
+            <p><strong>Status:</strong> Pelajar</p>
+          </div>
+        </div>
+
+
+    </div>
+  </section>
+
+    <section id="portofolio" class="section portofolio">
+      <div class="content">
+        <h2>Portofolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <img src="pict/" alt="" class="portfolio-image" />
+            <div class="portfolio-overlay">
+              <h3>PORTOFOLIO </h3>
+              <p>Kumpulan Portofolio Project Yang Kami Miliki</p>
+              <a href="project/portofolio.html" target="_blank" class="portfolio-btn">Seen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <section id="kontak" class="section kontak">
+    <div class="content">
+      <h2>Contact</h2>
+      <p>Email : zainervatech@gmail.com</p>
+      <p>ig   : <a href="https://www.instagram.com/zainervatech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+      @zainervatech</a></p>
+      <p> WA : <a href="https://wa.me/6285757253329">+62-8575-7253-329</a></p>
+      <p> GitHub : Zainervatech</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zain Minerva  Tech. All rights reserved.</p>
+  </footer>
+
+  <audio id="soundIntro" src="assets/audio/soundsis.mp3" preload="auto"></audio>
+
+  <script>
+    window.addEventListener('load', () => {
+      const intro = document.querySelector('.intro');
+      const audio = document.getElementById('soundIntro');
+      
+      audio.play(); 
+
+      setTimeout(() => {
+        intro.style.animation = 'fadeOut 2s ease-in-out forwards';
+        setTimeout(() => {
+          intro.style.display = 'none';
+        }, 2000);
+      }, 3000);
+    });
+  </script>
+
+    <script>
+      function toggleBio(element) {
+        const isActive = element.classList.contains('active');
+
+        // Tutup semua kartu
+        document.querySelectorAll('.team-member').forEach(member => {
+          member.classList.remove('active');
+        });
+
+        // Buka jika belum aktif
+        if (!isActive) {
+          element.classList.add('active');
+        }
+      }
+    </script>
+</body>
+</html>
